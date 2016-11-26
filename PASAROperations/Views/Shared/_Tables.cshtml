@@ -1,0 +1,1968 @@
+﻿    @{
+        ViewBag.Title = "_tables";
+}
+
+<div class="right_div_tbl">
+   
+    @*<img id="af_inventory_imgbtn" class="save_btn" src="../Images/diskette.png" width="20" disabled="disabled"/> *@
+
+     <table id="ref" class="af_tbl">
+        <tr>
+            <th>Location</th>
+            <th colspan="">Row#</th>
+            <th colspan="2">Total Pcs</th>
+            <th colspan="2">Grade A</th>
+            <th colspan="2">Grade B</th>
+            @*<th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworkable</th>
+            @*<th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworked</th>
+           @* <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reject</th>
+            <th colspan="2">Lot#</th>
+        </tr>
+        
+        <tr>    
+
+             <th class="" rowspan="79" > Refinery Yard </th> 
+             <th colspan="">A</th>
+             <th colspan="2"><input type="text" class="total" id="total_182" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+          <td colspan="2"><input type="text" class="add" id="gradeA_1307" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1308" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @* <td colspan="2"><input type="text" class="a3" id="goodlot_786" disabled="disabled"/></td>*@
+          <td colspan="2"><input type="text" class="add" id="reworkable_426" onkeypress="return isNumber(event)" size="10" disabled="disabled" /></td>
+          @*<td colspan="2"><input type="text" class="a5" id="reworkablelot_906" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_546" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="a7" id="reworkedlot_1026" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_666" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="a9" id="rejectlot_1146"disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+                      
+            <th colspan="">B</th>
+           <th colspan="2"><input type="text" class="total" id="total_183" onkeypress="return isNumber(event)"  onfocus="this.blur()" readonly="readonly"" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1309" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1310" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="b3" id="goodlot_787" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_427" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="b5" id="reworkablelot_907" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_547" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="b7" id="reworkedlot_1027" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_667" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="b9" id="rejectlot_1147" disabled="disabled"/></td>      
+        </tr>
+        <tr>     
+
+           <th colspan="">C</th>   
+           <th colspan="2"><input type="text" class="total" id="total_184" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1311" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           <td colspan="2"><input type="text" class="add" id="gradeB_1312" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="c3" id="goodlot_788" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_428" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="c5" id="reworkablelot_908" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_548" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="c7" id="reworkedlot_1028" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_668" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="c9" id="rejectlot_1148" disabled="disabled" /></td>             
+        </tr>
+        <tr>         
+             <th colspan="">D</th>
+            <th colspan="2"><input type="text" class="total" id="total_185" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1313" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           <td colspan="2"><input type="text" class="add" id="gradeB_1314" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="d3" id="goodlot_789" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_429" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="d5" id="reworkablelot_909" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_549" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="d7" id="reworkedlot_1029" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_669" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="d9" id="rejectlot_1149" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">1</th>
+            <th colspan="2"><input type="text" class="total" id="total_186" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1315" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1316" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="1_3" id="goodlot_790" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_430" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="1_5" id="reworkablelot_910" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_550" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="1_7" id="reworkedlot_1030" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_670" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="1_9" id="rejectlot_1150" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">2</th>
+           <th colspan="2"><input type="text" class="total" id="total_187" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1317" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1318" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="2_3" id="goodlot_791" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_431" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+        @*   <td colspan="2"><input type="text" class="2_5" id="reworkablelot_911" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_551" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="2_7" id="reworkedlot_1031" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_671" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="2_9" id="rejectlot_1151" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">3</th>
+           <th colspan="2"><input type="text" class="total" id="total_188" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1319" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1321" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="3_3" id="goodlot_792" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_432" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+         @*  <td colspan="2"><input type="text" class="3_5" id="reworkablelot_912" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_552" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="3_7" id="reworkedlot_1032" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_672" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="3_9" id="rejectlot_1152" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">4</th>
+           <th colspan="2"><input type="text" class="total" id="total_189" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1322" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1323" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="4_3" id="goodlot_793" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_433" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="4_5" id="reworkablelot_913" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_553" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="4_7" id="reworkedlot_1033" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_673" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="4_9" id="rejectlot_1153" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">5</th>
+           <th colspan="2"><input type="text" class="total" id="total_190" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1324"  onkeypress="return isNumber(event)" disabled="disabled"/></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1325"  onkeypress="return isNumber(event)" disabled="disabled"/></td>
+         @*  <td colspan="2"><input type="text" class="5_3" id="goodlot_794" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_434" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="5_5" id="reworkablelot_914" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_554" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="5_7" id="reworkedlot_1034" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_674" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="5_9" id="rejectlot_1154" disabled="disabled" /></td>      
+        </tr>
+        <tr>    
+            
+             <th colspan="">6</th>
+           <th colspan="2"><input type="text" class="total" id="total_191" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1326" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1327" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="6_3" id="goodlot_795" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_435" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="6_5" id="reworkablelot_915" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_555" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="6_7" id="reworkedlot_1035" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_675" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="6_9" id="rejectlot_1155" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">7</th>
+           <th colspan="2"><input type="text" class="total" id="total_192" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1328" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1329" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="7_3" id="goodlot_796" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_436" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="7_5" id="reworkablelot_916" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_556" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="7_7" id="reworkedlot_1036" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_676" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="7_9" id="rejectlot_1156" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">8</th>
+           <th colspan="2"><input type="text" class="total" id="total_193" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1330" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1331" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="8_3" id="goodlot_797" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_437" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="8_5" id="reworkablelot_917" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_557" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="8_7" id="reworkedlot_1037" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_677" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="" id="rejectlot_1157" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">9</th>
+           <th colspan="2"><input type="text" class="total" id="total_194" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1332" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1333" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="9_3" id="goodlot_798" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_438" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="9_5" id="reworkablelot_918" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_558" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="9_7" id="reworkedlot_1038" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_678" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="9_9" id="rejectlot_1158" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">10</th>
+           <th colspan="2"><input type="text" class="total" id="total_195" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1334" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1335" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="10_3" id="goodlot_799" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_439" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="10_5" id="reworkablelot_919" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_559" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="10_7" id="reworkedlot_1039" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_679" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="10_9" id="rejectlot_1159" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">11</th>
+           <th colspan="2"><input type="text" class="total" id="total_196" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1336" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1337" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="11_3" id="goodlot_800" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_440" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="11_5" id="reworkablelot_920" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_560" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="11_7" id="reworkedlot_1040" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_680" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="11_9" id="rejectlot_1160" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">12</th>
+           <th colspan="2"><input type="text" class="total" id="total_197" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1338" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+                <td colspan="2"><input type="text" class="add" id="gradeB_1339" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="12_3" id="goodlot_801" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_441" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="12_5" id="reworkablelot_921" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_561" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="12_7" id="reworkedlot_1041" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_681" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="12_9" id="rejectlot_1161" disabled="disabled" /></td>      
+        </tr>
+        <tr>     
+                
+             <th colspan="">13</th>
+           <th colspan="2"><input type="text" class="total" id="total_198" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1340" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1342" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="13_3" id="goodlot_802" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_442" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="13_5" id="reworkablelot_922" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_562" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="13_7" id="reworkedlot_1042" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_682" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="13_9" id="rejectlot_1162" disabled="disabled"/></td>      
+        </tr>
+        <tr>       
+               
+             <th colspan="">14</th>
+           <th colspan="2"><input type="text" class="total" id="total_199" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1343" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1344" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="14_3" id="goodlot_803" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_443" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="14_5" id="reworkablelot_923" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_563" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="14_7" id="reworkedlot_1043" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_683" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="14_9" id="rejectlot_1163" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+              
+             <th colspan="">15</th>
+           <th colspan="2"><input type="text" class="total" id="total_200" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1345" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1346" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="15_3" id="goodlot_804" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_444" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="15_5" id="reworkablelot_924" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_564" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+      @*     <td colspan="2"><input type="text" class="15_7" id="reworkedlot_1044" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_684" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="15_9" id="rejectlot_1164" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">16</th>
+           <th colspan="2"><input type="text" class="total" id="total_201" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1347" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1348" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="16_3" id="goodlot_805" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_445" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="16_5" id="reworkablelot_925" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_565" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="16_7" id="reworkedlot_1045" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_685" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="16_9" id="rejectlot_1165" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">17</th>
+           <th colspan="2"><input type="text" class="total" id="total_202" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1349" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1350" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="17_3" id="goodlot_806" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_446" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="17_5" id="reworkablelot_926" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_566" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="17_7" id="reworkedlot_1046" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_686" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="17_9" id="rejectlot_1166" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">18</th>
+           <th colspan="2"><input type="text" class="total" id="total_203" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1351" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1352" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="18_3" id="goodlot_807" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_447" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="18_5" id="reworkablelot_927" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_567" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="18_7" id="reworkedlot_1047" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_687" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="18_9" id="rejectlot_1167" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">19</th>
+           <th colspan="2"><input type="text" class="total" id="total_204" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1353" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1354" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="19_3" id="goodlot_808" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_448" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="19_5" id="reworkablelot_928" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_568" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="19_7" id="reworkedlot_1048" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_688" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="19_9" id="rejectlot_1168" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">20</th>
+           <th colspan="2"><input type="text" class="total" id="total_205" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1355" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1356" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="20_3" id="goodlot_809" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_449" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="20_5" id="reworkablelot_929" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_569" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="20_7" id="reworkedlot_1049" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_689" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="20_9" id="rejectlot_1169" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">21</th>
+           <th colspan="2"><input type="text" class="total" id="total_206" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1357" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1358" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="21_3" id="goodlot_810" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_450" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="21_5" id="reworkablelot_930" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_570" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="21_7" id="reworkedlot_1050" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_690" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="21_9" id="rejectlot_1170" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">22</th>
+           <th colspan="2"><input type="text" class="total" id="total_207" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1359" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1360" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="22_3" id="goodlot_811" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_451" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="22_5" id="reworkablelot_931" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_571" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="22_7" id="reworkedlot_1051" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_691" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="22_9" id="rejectlot_1171" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">23</th>
+           <th colspan="2"><input type="text" class="total" id="total_208" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1361" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1362" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="23_3" id="goodlot_812" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_452" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="23_5" id="reworkablelot_932" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_572" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="23_7" id="reworkedlot_1052" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_692" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="23_9" id="rejectlot_1172" disabled="disabled" /></td>      
+        </tr>
+        <tr>       
+            
+             <th colspan="">24</th>
+           <th colspan="2"><input type="text" class="total" id="total_209" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1363" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1364" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="24_3" id="goodlot_813" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_453" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="24_5" id="reworkablelot_933" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_573" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="24_7" id="reworkedlot_1053" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_693" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="24_9" id="rejectlot_1173" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">25</th>
+           <th colspan="2"><input type="text" class="total" id="total_210" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1365" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1366" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="25_3" id="goodlot_814" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_454" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="25_5" id="reworkablelot_934" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_574" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="25_7" id="reworkedlot_1054" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_694" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="25_9" id="rejectlot_1174" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">26</th>
+           <th colspan="2"><input type="text" class="total" id="total_211" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1367" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1368" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="26_3" id="goodlot_815" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_455" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="26_5" id="reworkablelot_935" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_575" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="26_7" id="reworkedlot_1055" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_695" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="26_9" id="rejectlot_1175" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">27</th>
+           <th colspan="2"><input type="text" class="total" id="total_212" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1369" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1370" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="27_3" id="goodlot_816" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_456" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="27_5" id="reworkablelot_936" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_576" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="27_7" id="reworkedlot_1056" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_696" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="27_9" id="rejectlot_1176" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">28</th>
+           <th colspan="2"><input type="text" class="total" id="total_213" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1371" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1372" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="28_3" id="goodlot_817" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_457" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="28_5" id="reworkablelot_937" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_577" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="28_7" id="reworkedlot_1057" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_697" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="28_9" id="rejectlot_1177" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">29</th>
+           <th colspan="2"><input type="text" class="total" id="total_214" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1373" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+                 <td colspan="2"><input type="text" class="add" id="gradeB_1374" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="29_3" id="goodlot_818" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_458" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="29_5" id="reworkablelot_938" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_578" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="29_7" id="reworkedlot_1058" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_698" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="29_9" id="rejectlot_1178" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">30</th> 
+           <th colspan="2"><input type="text" class="total" id="total_215" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1375" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1376" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="30_3" id="goodlot_819" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_459" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="30_5" id="reworkablelot_939" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_579" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="30_7" id="reworkedlot_1059" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_699" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="30_9" id="rejectlot_1179" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">31</th>
+           <th colspan="2"><input type="text" class="total" id="total_216" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1377" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+                <td colspan="2"><input type="text" class="add" id="gradeB_1378" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+         @*  <td colspan="2"><input type="text" class="31_3" id="goodlot_820" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_460" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="31_5" id="reworkablelot_940" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_580" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="31_7" id="reworkedlot_1060" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_700" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="31_9" id="rejectlot_1180" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">32</th>
+           <th colspan="2"><input type="text" class="total" id="total_217" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1379" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1380" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="32_3" id="goodlot_821" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_461" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="32_5" id="reworkablelot_941" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_581" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="32_7" id="reworkedlot_1061" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_701" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="32_9" id="rejectlot_1181" disabled="disabled"/></td>      
+        </tr>
+        <tr>
+            
+             <th colspan="">33</th>
+           <th colspan="2"><input type="text" class="total" id="total_218" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1381" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1382" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="33_3" id="goodlot_822" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_462" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="33_5" id="reworkablelot_942" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_582" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="33_7" id="reworkedlot_1062" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_702" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="33_9" id="rejectlot_1182" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">34</th>
+           <th colspan="2"><input type="text" class="total" id="total_219" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1383" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1384" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="34_3" id="goodlot_823" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_463" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="34_5" id="reworkablelot_943" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_583" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="34_7" id="reworkedlot_1063" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_703" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="34_9" id="rejectlot_1183" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">35</th>
+           <th colspan="2"><input type="text" class="total" id="total_220" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1386" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1387" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="35_3" id="goodlot_824" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_464" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="35_5" id="reworkablelot_944" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_584" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="35_7" id="reworkedlot_1064" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_704" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="35_9" id="rejectlot_1184" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">36</th>
+           <th colspan="2"><input type="text" class="total" id="total_221" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1388" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1389" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+      @*     <td colspan="2"><input type="text" class="36_3" id="goodlot_825" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_465" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="36_5" id="reworkablelot_945" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_585" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="36_7" id="reworkedlot_1065" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_705" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="36_9" id="rejectlot_1185" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">37</th>
+           <th colspan="2"><input type="text" class="total" id="total_222" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1390" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1391" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="37_3" id="goodlot_826" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_466" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="37_5" id="reworkablelot_946" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_586" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="37_7" id="reworkedlot_1066" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_706" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="37_9" id="rejectlot_1186" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">38</th>
+           <th colspan="2"><input type="text" class="total" id="total_223" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1392" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1393" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="38_3" id="goodlot_827" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_467" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="38_5" id="reworkablelot_947" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_587" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="38_7" id="reworkedlot_1067" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_707" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="38_9" id="rejectlot_1187" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">39</th>
+           <th colspan="2"><input type="text" class="total" id="total_224" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1394" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1395" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="39_3" id="goodlot_828" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_468" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="39_5" id="reworkablelot_948" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_588" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="39_7" id="reworkedlot_1068" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_708" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="39_9" id="rejectlot_1188" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">40</th>
+           <th colspan="2"><input type="text" class="total" id="total_225" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1396" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1397" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="40_3" id="goodlot_829" disabled="disabled"  /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_469" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="40_5" id="reworkablelot_949" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_589" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="40_7" id="reworkedlot_1069" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_709" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="40_9" id="rejectlot_1189" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">41</th>
+           <th colspan="2"><input type="text" class="total" id="total_226" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1398" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1400" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="41_3" id="goodlot_830" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_470" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="41_5" id="reworkablelot_950" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_590" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="41_7" id="reworkedlot_1070" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_710" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="41_9" id="rejectlot_1190" disabled="disabled"/></td>      
+        </tr>
+        <tr>      
+            
+             <th colspan="">42</th>
+           <th colspan="2"><input type="text" class="total" id="total_227" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1401" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1402" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="42_3" id="goodlot_831" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_471" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="42_5" id="reworkablelot_951" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_591" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="42_7" id="reworkedlot_1071" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_711" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="42_9" id="rejectlot_1191" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">43</th>
+           <th colspan="2"><input type="text" class="total" id="total_228" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1403" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1404" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="43_3" id="goodlot_832" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_472" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="43_5" id="reworkablelot_952" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_592" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="43_7" id="reworkedlot_1072" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_712" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="43_9" id="rejectlot_1192" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">44</th>
+           <th colspan="2"><input type="text" class="total" id="total_229" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1405" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1406" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="44_3" id="goodlot_833" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_473" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="44_5" id="reworkablelot_953" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_593" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="44_7" id="reworkedlot_1073" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_713" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="44_9" id="rejectlot_1193" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">45</th>
+           <th colspan="2"><input type="text" class="total" id="total_230" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1407" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1408" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="45_3" id="goodlot_834" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_474" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="45_5" id="reworkablelot_954" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_594" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="45_7" id="reworkedlot_1074" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_714" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="45_9" id="rejectlot_1194" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">46</th>
+           <th colspan="2"><input type="text" class="total" id="total_231" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1409" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1410" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="46_3" id="goodlot_835" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_475" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="46_5" id="reworkablelot_955" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_595" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="46_7" id="reworkedlot_1075" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_715" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="46_9" id="rejectlot_1195" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">47</th>
+           <th colspan="2"><input type="text" class="total" id="total_232" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1411" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1412" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="47_3" id="goodlot_836" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_476" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="47_5" id="reworkablelot_956" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_596" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="47_7" id="reworkedlot_1076" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_716" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="47_9" id="rejectlot_1196" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">48</th>
+           <th colspan="2"><input type="text" class="total" id="total_233" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1413" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1414" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="48_3" id="goodlot_837" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_477" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="48_5" id="reworkablelot_957" disabled="disabled" ></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_597" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="48_7" id="reworkedlot_1077" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_717" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="48_9" id="rejectlot_1197" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">49</th>
+           <th colspan="2"><input type="text" class="total" id="total_234" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1415" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1416" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="49_3" id="goodlot_838" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_478" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="49_5" id="reworkablelot_958" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_598" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="49_7" id="reworkedlot_1078" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_718" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="49_9" id="rejectlot_1198" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">50</th>
+           <th colspan="2"><input type="text" class="total" id="total_235" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1417" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1418" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="50_3" id="goodlot_839" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_479" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="50_5" id="reworkablelot_959" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_599" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="50_7" id="reworkedlot_1079" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_719" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="50_9" id="rejectlot_1199" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+            
+             <th colspan="">51</th>
+           <th colspan="2"><input type="text" class="total" id="total_236" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1419" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1420" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="51_3" id="goodlot_840" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_480" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="51_5" id="reworkablelot_960" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_600" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="51_7" id="reworkedlot_1080" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_720" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="51_9" id="rejectlot_1200" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">52</th>
+           <th colspan="2"><input type="text" class="total" id="total_237" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1421" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1422" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="52_3" id="goodlot_841" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_481" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="52_5" id="reworkablelot_961" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_601" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="52_7" id="reworkedlot_1081" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_721" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="52_9" id="rejectlot_1201" disabled="disabled"/></td>      
+        </tr>
+
+
+
+        <tr>         
+             <th colspan="">53</th>
+            <th colspan="2"><input type="text" class="total" id="total_238" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1423" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1424" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="53_3" id="goodlot_842" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_482" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="53_5" id="reworkablelot_962" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_602" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="53_7" id="reworkedlot_1082" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_722" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="53_9" id="rejectlot_1202" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">54</th>
+           <th colspan="2"><input type="text" class="total" id="total_239" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1425" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1426" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="54_3" id="goodlot_843" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_483" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="54_5" id="reworkablelot_963" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_603" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="54_7" id="reworkedlot_1083" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_723" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           <td colspan="2"><input type="text" class="54_9" id="rejectlot_1203" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">55</th>
+           <th colspan="2"><input type="text" class="total" id="total_240" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1427" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1428" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="55_3" id="goodlot_844" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_484" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="55_5" id="reworkablelot_964" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_604" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="55_7" id="reworkedlot_1084" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_724" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="55_9" id="rejectlot_1204" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">56</th>
+           <th colspan="2"><input type="text" class="total" id="total_241" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1429" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1430" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="56_3" id="goodlot_845" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_485" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="56_5" id="reworkablelot_965" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_605" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="56_7" id="reworkedlot_1085" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_725" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="56_9" id="rejectlot_1205" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">57</th>
+           <th colspan="2"><input type="text" class="total" id="total_242" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1431" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1432" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="57_3" id="goodlot_846" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_486" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="57_5" id="reworkablelot_966" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_606" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="57_7" id="reworkedlot_1086" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_726" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="57_9" id="rejectlot_1206" disabled="disabled"/></td>      
+        </tr>
+        <tr>    
+             
+             <th colspan="">58</th>
+           <th colspan="2"><input type="text" class="total" id="total_243" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1433" onkeypress="return isNumber(event)" disabled="disabled" /></td> 
+            <td colspan="2"><input type="text" class="add" id="gradeB_1434" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="58_3" id="goodlot_847" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_487" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="58_5" id="reworkablelot_967" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_607" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="58_7" id="reworkedlot_1087" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_727" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="58_9" id="rejectlot_1207" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">59</th>
+           <th colspan="2"><input type="text" class="total" id="total_244" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1435" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeA_1436" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="59_3" id="goodlot_848" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_488" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="59_5" id="reworkablelot_968" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_608" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+    @*       <td colspan="2"><input type="text" class="59_7" id="reworkedlot_1088" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_728" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="59_9" id="rejectlot_1208" disabled="disabled" /></td>      
+        </tr>
+        <tr>     
+              
+             <th colspan="">60</th>
+           <th colspan="2"><input type="text" class="total" id="total_245" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1437" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeA_1438" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="60_3" id="goodlot_849" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_489" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="60_5" id="reworkablelot_969" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_609" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="60_7" id="reworkedlot_1089" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_729" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="60_9" id="rejectlot_1209" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">61</th>
+           <th colspan="2"><input type="text" class="total" id="total_246" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1439" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1440" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="61_3" id="goodlot_850" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_490" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="61_5" id="reworkablelot_970" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_610" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="61_7" id="reworkedlot_1090" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_730" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="61_9" id="rejectlot_1210" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">62</th>
+           <th colspan="2"><input type="text" class="total" id="total_247" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1441" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1442" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="62_3" id="goodlot_851" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_491" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="62_5" id="reworkablelot_971" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_611" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="62_7" id="reworkedlot_1091" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_731" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           <td colspan="2"><input type="text" class="62_9" id="rejectlot_1211" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">63</th>
+           <th colspan="2"><input type="text" class="total" id="total_248" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1443" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1444" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+       @*    <td colspan="2"><input type="text" class="63_3" id="goodlot_852" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_492" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="63_5" id="reworkablelot_972" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_612" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+      @*     <td colspan="2"><input type="text" class="63_7" id="reworkedlot_1092" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_732" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="63_9" id="rejectlot_1212" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">64</th>
+           <th colspan="2"><input type="text" class="total" id="total_249" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1445" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1446" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="64_3" id="goodlot_853" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_493" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="64_5" id="reworkablelot_973" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_613" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="64_7" id="reworkedlot_1093" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_733" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="64_9" id="rejectlot_1213" disabled="disabled" /></td>      
+        </tr>
+        <tr>     
+                
+             <th colspan="">65</th>
+           <th colspan="2"><input type="text" class="total" id="total_250" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1447" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1448" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="65_3" id="goodlot_854" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_494" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="65_5" id="reworkablelot_974" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_614" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="65_7" id="reworkedlot_1094" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_734" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="65_9" id="rejectlot_1214" disabled="disabled"/></td>      
+        </tr>
+        <tr>       
+               
+             <th colspan="">66</th>
+           <th colspan="2"><input type="text" class="total" id="total_251" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1449" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1450" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="66_3" id="goodlot_855" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_495" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="66_5" id="reworkablelot_975" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_615" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="66_7" id="reworkedlot_1095" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_735" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="66_9" id="rejectlot_1215" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+                
+             <th colspan="">67</th>
+           <th colspan="2"><input type="text" class="total" id="total_252" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1451" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1452" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="67_3" id="goodlot_856" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_496" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="67_5" id="reworkablelot_976" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_616" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="67_7" id="reworkedlot_1096" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_736" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="67_9" id="rejectlot_1216" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">68</th>
+           <th colspan="2"><input type="text" class="total" id="total_253" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1453" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1454" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="68_3" id="goodlot_857" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_497" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="68_5" id="reworkablelot_977" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_617" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+     @*      <td colspan="2"><input type="text" class="68_7" id="reworkedlot_1097" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_737" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="68_9" id="rejectlot_1217" disabled="disabled"/></td>      
+        </tr>
+        <tr>    
+                 
+             <th colspan="">69</th>
+           <th colspan="2"><input type="text" class="total" id="total_254" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1455" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1456" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="69_3" id="goodlot_858" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_498" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="69_5" id="reworkablelot_978" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_618" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="69_7" id="reworkedlot_1098" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_738" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="69_9" id="rejectlot_1218" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">70</th>
+           <th colspan="2"><input type="text" class="total" id="total_255" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1457" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1458" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="70_3" id="goodlot_859" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_499" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="70_5" id="reworkablelot_979" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_619" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="70_7" id="reworkedlot_1099" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_739" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="70_9" id="rejectlot_1219" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">71</th>
+           <th colspan="2"><input type="text" class="total" id="total_256" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1459" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1460" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="71_3" id="goodlot_860" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_500" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="71_5" id="reworkablelot_980" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_620" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="71_7" id="reworkedlot_1100" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_740" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="71_9" id="rejectlot_1220" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">72</th>
+           <th colspan="2"><input type="text" class="total" id="total_257" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1461" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+                <td colspan="2"><input type="text" class="add" id="gradeB_1462" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="" id="goodlot_861" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_501" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="" id="reworkablelot_981" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_621" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="" id="reworkedlot_1101" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_741" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="" id="rejectlot_1221" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">73</th>
+           <th colspan="2"><input type="text" class="total" id="total_258" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1463" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1464" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="73_3" id="goodlot_862" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_502" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="73_5" id="reworkablelot_982" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_622" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="73_7" id="reworkedlot_1102" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_742" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="73_9" id="rejectlot_1222" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">74</th>
+           <th colspan="2"><input type="text" class="total" id="total_259" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1465" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1466" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="74_3" id="goodlot_863" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_503" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="74_5" id="reworkablelot_983" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_623" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="74_7" id="reworkedlot_1103" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_743" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="74_9" id="rejectlot_1223" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">75</th>
+           <th colspan="2"><input type="text" class="total" id="total_260" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1468" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1469" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="75_3" id="goodlot_864" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_504" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="75_5" id="reworkablelot_984" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_624" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+      @*     <td colspan="2"><input type="text" class="75_7" id="reworkedlot_1104" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_744" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="75_9" id="rejectlot_1224" disabled="disabled" /></td>      
+        </tr>
+   </table>
+  
+
+    </div>
+<div class="center_div_table">
+      <table id="lpg" class="af_tbl">
+         <tr>
+            <th>Location</th>
+            <th colspan="">Row#</th>
+            <th colspan="2">Total Pcs</th>
+            <th colspan="2">Grade A</th>
+             <th colspan="2">Grade B</th>
+          @*  <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworkable</th>
+           @* <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworked</th>
+          @*  <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reject</th>
+            <th colspan="2">Lot#</th>
+        </tr>
+        
+         <tr>       
+           <th class="th_stage_label" rowspan="16"> LPG Yard </th> 
+             <th colspan="">&nbsp;&nbsp;&nbsp;76&nbsp;&nbsp;&nbsp;</th>
+           <th colspan="2"><input type="text" class="total" id="total_261" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+               <td colspan="2"><input type="text" class="add" id="gradeA_1470" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1471" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="76_3" id="goodlot_865" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_505" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="76_5" id="reworkablelot_985" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_625" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="76_7" id="reworkedlot_1105" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_745" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="76_9" id="rejectlot_1225" disabled="disabled"/></td>      
+        </tr>
+         <tr>         
+             <th colspan="">77</th>
+           <th colspan="2"><input type="text" class="total" id="total_262" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1472" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1473" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="77_3" id="goodlot_866" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_506" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="77_5" id="reworkablelot_986" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_626" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="77_7" id="reworkedlot_1106" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_746" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="77_9" id="rejectlot_1226" disabled="disabled" /></td>      
+        </tr>
+         <tr> 
+                   
+             <th colspan="">78</th>
+           <th colspan="2"><input type="text" class="total" id="total_263" onkeypress="return isNumber(event)"onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1474" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1475" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="78_3" id="goodlot_867" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_507" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="78_5" id="reworkablelot_987" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_627" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+          @* <td colspan="2"><input type="text" class="78_7" id="reworkedlot_1107" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_747" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="78_9" id="rejectlot_1227" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">79</th>
+           <th colspan="2"><input type="text" class="total" id="total_264" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1476" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1477" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="79_3" id="goodlot_868" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_508" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="79_5" id="reworkablelot_988" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_628" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="79_7" id="reworkedlot_1108" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_748" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="79_9" id="rejectlot_1228" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">80</th>
+           <th colspan="2"><input type="text" class="total" id="total_265" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1478" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1480" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="80_3" id="goodlot_869" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_509" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="80_5" id="reworkablelot_989" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_629" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="80_7" id="reworkedlot_1109" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_749" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="80_9" id="rejectlot_1229" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">81</th>
+           <th colspan="2"><input type="text" class="total" id="total_266" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1481" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1482" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="81_3" id="goodlot_870" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_510" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           @*<td colspan="2"><input type="text" class="81_5" id="reworkablelot_990" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_630" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="81_7" id="reworkedlot_1110" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_750" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="81_9" id="rejectlot_1230" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">82</th>
+           <th colspan="2"><input type="text" class="total" id="total_267" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1483" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1484" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="82-3" id="goodlot_871" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_511" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="82_5" id="reworkablelot_991" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_631" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="82_7" id="reworkedlot_1111" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_751" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="82_9" id="rejectlot_1231" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">83</th>
+           <th colspan="2"><input type="text" class="total" id="total_268" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1485" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1486" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="83_3" id="goodlot_872" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_512" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="83_5" id="reworkablelot_992" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_632" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="83_7" id="reworkedlot_1112" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_752" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="83_9" id="rejectlot_1232" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">84</th>
+           <th colspan="2"><input type="text" class="total" id="total_269" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1487" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1488" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="84_3" id="goodlot_873" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_513" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="84_5" id="reworkablelot_993" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_633" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="84_7" id="reworkedlot_1113" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_753" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="84_9" id="rejectlot_1233" disabled="disabled" /></td>      
+        </tr>
+         <tr>
+             
+             <th colspan="">85</th>
+           <th colspan="2"><input type="text" class="total" id="total_270" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1489" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1490" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="" id="goodlot_874" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_514" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="" id="reworkablelot_994" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_634" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="" id="reworkedlot_1114" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_754" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="" id="rejectlot_1234" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">86</th>
+           <th colspan="2"><input type="text" class="total" id="total_271"  onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1491" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1492" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="" id="goodlot_875" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_515" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="" id="reworkablelot_995" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_635" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class=" " id="reworkedlot_1115" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_755" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="" id="rejectlot_1235" disabled="disabled"/></td>      
+        </tr>
+         <tr>         
+            
+             <th colspan="">87</th>
+           <th colspan="2"><input type="text" class="total" id="total_272" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1493" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1494" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="87_3" id="goodlot_876" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_516" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="87_5" id="reworkablelot_996" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_636" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="87_7" id="reworkedlot_1116" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_756" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="87_9" id="rejectlot_1236" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">88</th>
+           <th colspan="2"><input type="text" class="total" id="total_273" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1495" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1496" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="88_3" id="goodlot_877" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_517" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="88_5" id="reworkablelot_997" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_637" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="88_7" id="reworkedlot_1117" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_757" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           <td colspan="2"><input type="text" class="88_9" id="rejectlot_1237" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">89</th>
+           <th colspan="2"><input type="text" class="total" id="total_274" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1497" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1498" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="89_3" id="goodlot_878" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_518" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="89_5" id="reworkablelot_998" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_638" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+         @*  <td colspan="2"><input type="text" class="89_7" id="reworkedlot_1118" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_758" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="89_9" id="rejectlot_1238" disabled="disabled"/></td>      
+        </tr>
+         <tr>         
+             <th colspan="">90</th>
+           <th colspan="2"><input type="text" class="total" id="total_275" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1499" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1500" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="90_3" id="goodlot_879" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_519" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="90_5" id="reworkablelot_999" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_639" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="90_7" id="reworkedlot_1119" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_759" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="90_9" id="rejectlot_1239" disabled="disabled" /></td>      
+        </tr>
+   
+         <tr>  
+                  
+             <th colspan="">91</th>
+           <th colspan="2"><input type="text" class="total" id="total_276" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeB_1501" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1502" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="91_3" id="goodlot_880" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_520" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="91_5" id="reworkablelot_1000" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_640" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="91_7" id="reworkedlot_1120" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_760" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="91_9" id="rejectlot_1240" disabled="disabled" /></td>      
+        </tr>
+         </table>
+        <table id="apm" class="af_tbl">
+         <tr>         
+            <th>Location</th>
+            <th colspan="">Row#</th>
+            <th colspan="2">Total Pcs</th>
+            <th colspan="2">Grade A</th>
+             <th colspan="2">Grade B</th>
+            @*<th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworkable</th>
+            @*<th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworked</th>
+          @*  <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reject</th>
+            <th colspan="2">Lot#</th>
+        </tr>
+         <tr>         
+             <th class="th_stage_label" rowspan="3">&nbsp;APM Yard</th>
+             <th colspan="">APM 1</th>
+           <th colspan="2"><input type="text" class="total" id="total_277" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1503" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1504" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="apm1_3" id="goodlot_881" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_521" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="apm1_5" id="reworkablelot_1001" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_641" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+         @*  <td colspan="2"><input type="text" class="apm1_7" id="reworkedlot_1121" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_761" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="apm1_9" id="rejectlot_1241" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">APM 2</th>
+           <th colspan="2"><input type="text" class="total" id="total_278" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1505" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1506" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="apm_3" id="goodlot_882" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_522" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="apm2_5" id="reworkablelot_1002" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_642" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="apm2_7" id="reworkedlot_1122" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_762" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="apm2_9" id="rejectlot_1242" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">APM 3</th>
+           <th colspan="2"><input type="text" class="total" id="total_279" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1507" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1508" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="apm3_3" id="goodlot_883" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_523" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="apm3_5" id="reworkablelot_1003" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_643" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="apm_7" id="reworkedlot_1123" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_763" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="apm3_9" id="rejectlot_1243" disabled="disabled" /></td>      
+        </tr>
+     </table>
+    <table id="rth" class="af_tbl">
+         <tr>    
+            <th>Location</th>
+            <th colspan="">Row#</th>
+            <th colspan="2">Total Pcs</th>
+            <th colspan="2">Grade A</th>
+             <th colspan="2">Grade B</th>
+            @*<th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworkable</th>
+           @* <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworked</th>
+           @* <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reject</th>
+            <th colspan="2">Lot#</th>
+        </tr>
+         <tr>    
+             <th colspan="" class="th_stage_label3" rowspan="22">  
+<strong>&nbsp;&nbsp;&nbsp;&nbsp;Refinery<br>&nbsp;Tankhouse</strong></th>     
+             <th colspan="">R 1</th>
+           <th colspan="2"=><input type="text" class="total" id="total_280" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1509" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1510" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="r1_3" id="goodlot_884" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_524" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="r1_5" id="reworkablelot_1004" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_644" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="r1_7" id="reworkedlot_1124" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_764" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="r1_9" id="rejectlot_1244" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             
+             <th colspan="">R 2</th>
+           <th colspan="2"><input type="text" class="total" id="total_281" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1511" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1512" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="r2_3" id="goodlot_885" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_525" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="r2_5" id="reworkablelot_1005" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_645" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="r2_7" id="reworkedlot_1125" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_765" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="r2_9" id="rejectlot_1245" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">R 3</th>
+           <th colspan="2"><input type="text" class="total" id="total_282" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1513" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1514" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="r3_3" id="goodlot_886" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_526" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="r3_5" id="reworkablelot_1006" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_646" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="r3_7" id="reworkedlot_1126" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_766" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="r3_9" id="rejectlot_1246" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">1</th>
+            <th colspan="2"><input type="text" class="total" id="total_283" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1515" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1516" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt1_3" id="goodlot_887" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_527" onkeypress="return isNumber(event)"disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="rt1_5" id="reworkablelot_1007" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_647" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt1_7" id="reworkedlot_1127" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_767" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt1_9" id="rejectlot_1247" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">2</th>
+           <th colspan="2"><input type="text" class="total" id="total_284" onkeypress="return isNumber(event)"onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1517" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1518" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt2_3" id="goodlot_888" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_528" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt2_5" id="reworkablelot_1008" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_648" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt2_7" id="reworkedlot_1128" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_768" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt2_9" id="rejectlot_1248" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">3</th>
+           <th colspan="2"><input type="text" class="total" id="total_285" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1519" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1521" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="rt3_3" id="goodlot_889" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_529" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+         @*  <td colspan="2"><input type="text" class="rt3_5" id="reworkablelot_1009" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_649" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="rt3_7" id="reworkedlot_1129" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_769" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt3_9" id="rejectlot_1249" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">4</th>
+           <th colspan="2"><input type="text" class="total" id="total_286" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1522" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1523" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt4_3" id="goodlot_890" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_530" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt4_5" id="reworkablelot_1010" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_650" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="rt4_7" id="reworkedlot_1130" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_770" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt4_9" id="rejectlot_1250" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">5</th>
+           <th colspan="2"><input type="text" class="total" id="total_287" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1524" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1526" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt5_3" id="goodlot_891" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_531" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt5_5" id="reworkablelot_1011" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_651" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt5_7" id="reworkedlot_1131" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_771" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt5_9" id="rejectlot_1251" disabled="disabled" /></td>      
+        </tr>
+        <tr>    
+            
+             <th colspan="">6</th>
+           <th colspan="2"><input type="text" class="total" id="total_288" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1527" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1528" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt6_3" id="goodlot_892" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_532" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt6_5" id="reworkablelot_1012" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_652" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt6_7" id="reworkedlot_1132" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_772" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt6_9" id="rejectlot_1252" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">7</th>
+           <th colspan="2"><input type="text" class="total" id="total_289" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1529" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1530" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt7_3" id="goodlot_893" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_533" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt7_5" id="reworkablelot_1013" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_653" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="rt7_7" id="reworkedlot_1133" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_773" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+           <td colspan="2"><input type="text" class="rt7_9" id="rejectlot_1253" disabled="disabled" /></td>      
+        </tr>
+        <tr>      
+           
+             <th colspan="">8</th>
+           <th colspan="2"><input type="text" class="total" id="total_290" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1531" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1532" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="rt8_3" id="goodlot_894" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_534" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt8_5" id="reworkablelot_1014" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_654" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt8_7" id="reworkedlot_1134" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_774" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt8_9" id="rejectlot_1254" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">9</th>
+           <th colspan="2"><input type="text" class="total" id="total_291" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1533" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1534" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="rt9_3" id="goodlot_895" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_535" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt9_5" id="reworkablelot_1015" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_655" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="rt9_7" id="reworkedlot_1135" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_775" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt9_9" id="rejectlot_1255" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">10</th>
+           <th colspan="2"><input type="text" class="total" id="total_292" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1535" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1536" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt10_3" id="goodlot_896" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_536" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt10_5" id="reworkablelot_1016" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_656" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt10_7" id="reworkedlot_1136" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_776" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt10_9" id="rejectlot_1256" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+             <th colspan="">11</th>
+           <th colspan="2"><input type="text" class="total" id="total_293" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1537" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1538" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="rt11_3" id="goodlot_897" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_537" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt11_5" id="reworkablelot_1017" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_657" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt11_7" id="reworkedlot_1137" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_777" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt11_9" id="rejectlot_1257" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">12</th>
+           <th colspan="2"><input type="text" class="total" id="total_294" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1539" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1540" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="rt12_3" id="goodlot_898" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_538" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+      @*     <td colspan="2"><input type="text" class="rt12_5" id="reworkablelot_1018" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_658" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt12_7" id="reworkedlot_1138" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_778" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt12_9" id="rejectlot_1258" disabled="disabled" /></td>      
+        </tr>
+        <tr>     
+                
+             <th colspan="">13</th>
+           <th colspan="2"><input type="text" class="total" id="total_295" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1541" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1542" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt13_3" id="goodlot_899" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_539" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt13_5" id="reworkablelot_1019" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_659" onkeypress="return isNumber(event)" disabled="disabled"/></td>
+        @*   <td colspan="2"><input type="text" class="rt13_7" id="reworkedlot_1139" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_779" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt13_9" id="rejectlot_1259" disabled="disabled" /></td>      
+        </tr>
+        <tr>       
+               
+             <th colspan="">14</th>
+           <th colspan="2"><input type="text" class="total" id="total_296" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1543" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1544" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+    @*       <td colspan="2"><input type="text" class="rt14_3" id="goodlot_900" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_540" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="rt14_5" id="reworkablelot_1020" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_700" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt14_7" id="reworkedlot_1140" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_780" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt14_9" id="rejectlot_1260" disabled="disabled"/></td>      
+        </tr>
+        <tr>         
+            
+             <th colspan="">15</th>
+           <th colspan="2"><input type="text" class="total" id="total_297" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1545" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1546" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt15_3" id="goodlot_901" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_541" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           @*<td colspan="2"><input type="text" class="rt15_5" id="reworkablelot_1021" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_701" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="rt15_7" id="reworkedlot_1141" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_781" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt15_9" id="rejectlot_1261" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">16</th>
+           <th colspan="2"><input type="text" class="total" id="total_298" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1547" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+             <td colspan="2"><input type="text" class="add" id="gradeB_1548" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt16_3" id="goodlot_902" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_542" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt16_5" id="reworkablelot_1022" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_702" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt16_7" id="reworkedlot_1142" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_782" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt16_9" id="rejectlot_1262" disabled="disabled" /></td>      
+        </tr>
+        <tr>  
+                
+             <th colspan="">17</th>
+           <th colspan="2"><input type="text" class="total" id="total_299" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeB_1549" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1550" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="rt17_3" id="goodlot_903" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_543" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt17_5" id="reworkablelot_1023"  disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_703" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt17_7" id="reworkedlot_1143" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_783" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt17_9" id="rejectlot_1263" disabled="disabled" /></td>      
+        </tr>
+        <tr>         
+             <th colspan="">18</th>
+           <th colspan="2"><input type="text" class="total" id="total_300" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1551" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+            <td colspan="2"><input type="text" class="add" id="gradeB_1552" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+        @*   <td colspan="2"><input type="text" class="rt18_3" id="goodlot_904" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_544" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="rt18_5" id="reworkablelot_1024" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_704" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+      @*     <td colspan="2"><input type="text" class="rt18_7" id="reworkedlot_1144" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_784" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt18_9" id="rejectlot_1264" disabled="disabled" /></td>      
+        </tr>
+         <tr>         
+             <th colspan="">19</th>
+           <th colspan="2"><input type="text" class="total" id="total_301" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly"/></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1553" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+              <td colspan="2"><input type="text" class="add" id="gradeB_1554" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt19_3" id="goodlot_905" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_545" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt19_5" id="reworkablelot_1025" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_705" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="rt19_7" id="reworkedlot_1145" disabled="disabled"/></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_785" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="rt19_9" id="rejectlot_1265" disabled="disabled"/></td>      
+        </tr>
+
+    </table>
+
+
+
+     <table id="oth" class="af_tbl">
+         <tr>    
+            <th>Location</th>
+            <th colspan="">Row#</th>
+            <th colspan="2">Total Pcs</th>
+            <th colspan="2">Grade A</th>
+             <th colspan="2">Grade B</th>
+            @*<th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworkable</th>
+           @* <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reworked</th>
+           @* <th colspan="2">Lot#</th>*@
+            <th colspan="2">Reject</th>
+            <th colspan="2">Lot#</th>
+        </tr>
+         <tr>    
+             <th colspan="" class="th_stage_label3" rowspan="22">  <br />
+<strong>Others &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong></th>     
+             <th colspan="">1</th>
+           <th colspan="2"=><input type="text" class="total" id="total_1269" onkeypress="return isNumber(event)" onfocus="this.blur()" readonly="readonly" /></th>
+           <td colspan="2"><input type="text" class="add" id="gradeA_1555" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+               <td colspan="2"><input type="text" class="add" id="gradeB_1556" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+       @*    <td colspan="2"><input type="text" class="r1_3" id="goodlot_" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworkable_1272" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+          @* <td colspan="2"><input type="text" class="r1_5" id="reworkablelot_" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reworked_1274" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+         @*  <td colspan="2"><input type="text" class="r1_7" id="reworkedlot_" disabled="disabled" /></td>*@
+           <td colspan="2"><input type="text" class="add" id="reject_1276" onkeypress="return isNumber(event)" disabled="disabled" /></td>
+           <td colspan="2"><input type="text" class="1_9" id="rejectlot_1277" disabled="disabled" /></td>      
+        </tr>
+
+
+    </table>
+
+
+
+
+</div>
+
+
+
+<div class="right_div_tbl">
+    <table id="total_ai_box" class="af_tbl" border="20px">
+        <tr>    
+             <th colspan="" class="th_stage_label" rowspan="5"> Total Anode Inventory</th>
+             <th colspan="2">Grade A</th>  
+             <th colspan="2"><input type="text" class="total" id="gradeA_total" placeholder="0" onfocus="this.blur()" readonly/></th>
+        </tr>
+        <tr>   
+           
+             <th colspan="2">Grade B</th>
+             <th colspan="2"><input type="text" class="total" id="gradeB_total" placeholder="0" onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>   
+           
+             <th colspan="2">Reworkable</th>
+             <th colspan="2"><input type="text" class="total" id="rew_total" placeholder="0" onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+       <tr>    
+           
+             <th colspan="2">Reworked</th>
+             <th colspan="2"><input type="text" class="total" id="reworked_total" placeholder="0" onfocus="this.blur()" readonly="readonly"/></th>             
+        </tr>
+        <tr>    
+             
+             <th colspan="2">Reject</th>
+             <th colspan="2"><input type="text" class="total" id="rej_total" placeholder="0" onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Total</th>
+             <th colspan="2"><input type="text" class="total" id="total_total" placeholder="0" onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+    </table>
+
+    <table id="" class="af_tbl">
+        <tr>    
+             <th colspan="" class="th_stage_label" rowspan="5">   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+Refinery Yard &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th colspan="2">Grade A</th>
+             <th colspan="2"><input type="text" class="total" id="ref_gradeA_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>
+                <th colspan="2">Grade B</th>
+             <th colspan="2"><input type="text" class="total" id="ref_gradeB_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+
+        </tr>
+        <tr>    
+           
+             <th colspan="2">Reworkable</th>
+             <th colspan="2"><input type="text" class="total" id="ref_rew_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+       <tr>    
+             
+             <th colspan="2">Reworked</th>
+             <th colspan="2"><input type="text" class="total" id="ref_reworked_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>             
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Reject</th>
+             <th colspan="2"><input type="text" class="total" id="ref_rej_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+             
+             <th colspan="2">Total</th>
+             <th colspan="2"><input type="text" class="total" id="ref_total_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+    </table>
+
+    <table id="" class="af_tbl">
+        <tr>    
+             <th colspan="" class="th_stage_label" rowspan="5">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LPG Yard  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th colspan="2">Grade A</th>
+             <th colspan="2"><input type="text" class="total" id="lpg_gradeA_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>
+            <th colspan="2">Grade B</th>
+             <th colspan="2"><input type="text" class="total" id="lpg_gradeB_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+
+        </tr>
+        <tr>    
+             
+             <th colspan="2">Reworkable</th>
+             <th colspan="2"><input type="text" class="total" id="lpg_rew_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+       <tr>    
+             
+             <th colspan="2">Reworked</th>
+             <th colspan="2"><input type="text" class="total" id="lpg_reworked_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>             
+        </tr>
+        <tr>    
+           
+             <th colspan="2">Reject</th>
+             <th colspan="2"><input type="text" class="total" id="lpg_rej_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Total</th>
+             <th colspan="2"><input type="text" class="total" id="lpg_total_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+    </table>
+
+    <table id="" class="af_tbl">
+        <tr>    
+             <th colspan="" class="th_stage_label" rowspan="5">  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  APM YARD  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+             <th colspan="2">Grade A</th>
+             <th colspan="2"><input type="text" class="total" id="apm_gradeA_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>
+             <th colspan="2">Grade B</th>
+             <th colspan="2"><input type="text" class="total" id="apm_gradeB_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+           
+             <th colspan="2">Reworkable</th>
+             <th colspan="2"><input type="text" class="total" id="apm_rew_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+       <tr>    
+             
+             <th colspan="2">Reworked</th>
+             <th colspan="2"><input type="text" class="total" id="apm_reworked_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>             
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Reject</th>
+             <th colspan="2"><input type="text" class="total" id="apm_rej_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+             
+             <th colspan="2">Total</th>
+             <th colspan="2"><input type="text" class="total" id="apm_total_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+    </table>
+
+
+    <table id="" class="af_tbl">
+        <tr>    
+             <th colspan="" class="th_stage_label" rowspan="5"> &nbsp;&nbsp; Refinery Tankhouse &nbsp;&nbsp;  
+</th>
+             <th colspan="2">Grade A</th>
+             <th colspan="2"><input type="text" class="total" id="rth_gradeA_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>
+            <th colspan="2">Grade B</th>
+             <th colspan="2"><input type="text" class="total" id="rth_gradeB_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Reworkable</th>
+             <th colspan="2"><input type="text" class="total" id="rth_rew_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+       <tr>    
+           
+             <th colspan="2">Reworked</th>
+             <th colspan="2"><input type="text" class="total" id="rth_reworked_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>             
+        </tr>
+        <tr>    
+             
+             <th colspan="2">Reject</th>
+             <th colspan="2"><input type="text" class="total" id="rth_rej_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Total</th>
+             <th colspan="2"><input type="text" class="total" id="rth_total_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+    </table>
+
+    <table id="" class="af_tbl">
+        <tr>    
+             <th colspan="" class="th_stage_label" rowspan="5"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Others &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+</th>
+             <th colspan="2">Grade A</th>
+             <th colspan="2"><input type="text" class="total" id="oth_gradeA_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>
+               <th colspan="2">Grade B</th>
+             <th colspan="2"><input type="text" class="total" id="oth_gradeB_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Reworkable</th>
+             <th colspan="2"><input type="text" class="total" id="oth_rew_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+       <tr>    
+           
+             <th colspan="2">Reworked</th>
+             <th colspan="2"><input type="text" class="total" id="oth_reworked_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>             
+        </tr>
+        <tr>    
+             
+             <th colspan="2">Reject</th>
+             <th colspan="2"><input type="text" class="total" id="oth_rej_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+        <tr>    
+            
+             <th colspan="2">Total</th>
+             <th colspan="2"><input type="text" class="total" id="oth_total_sum_table" placeholder="0"  onfocus="this.blur()" readonly="readonly"/></th>
+        </tr>
+    </table>
+</div>
+
+@*<script type="text/javascript">
+    $("#af_qig_rework_tbl tr:not(:first)").each(function () {
+        row_total = 0;
+        $(".add:input", this).each(function () {
+            row_total += Number($(this).val());
+            });
+        $(".total", this).attr('value', row_total);
+        //alert(row_total);
+
+    });*@
+
+<script type="text/javascript">
+
+      $(document).ready(function () {
+                    $('td, input,textarea,select').blur(
+                    function () {
+                        $(this).css({ 'background-color': '#FFFFEEE' });
+                    });
+
+                    $('td, input,textarea,select').change(
+                    function () {
+                        $(this).css({ 'background-color': '#DFD8D1' });
+                        $(this).addClass('changed');
+                    });
+                });
+    $('.add').keyup(function () {
+        findTotals();
+    });
+
+    function findTotals() {
+        $("#af_qig_rework_tbl tr:not(:first)").each(function () {
+            row_total = 0;
+            $(".add:input", this).each(function () {
+                row_total += Number($(this).val());
+            });
+            $(".total", this).attr('value', row_total);
+        });
+    }
+    jQuery(function () {
+        jQuery('#btn_inv').click();
+    });
+</script>
+

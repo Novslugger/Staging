@@ -1,0 +1,155 @@
+﻿<div id="add_mtapping_div">
+<b>Matte Tapping</b>
+<br />
+<br />
+    <div id="mtapping_id">@ViewBag.MtappingId</div>
+<div>
+    <table id="start_time_table">
+            <tr><td rowspan="2" class="label_datetype">Start Time : &nbsp;</td>
+                <td class="label_date">Date</td><td class="label_date">Time (hh:mm)</td>
+            </tr>
+              
+            <tr>
+                <td id="start_date_addact_mtap"><input id="start_date_input_mtapedit" type="text"  value="@ViewBag.TappingStartDate_Edit.ToString("MM/dd/yyyy")"/></td>
+                <td id="start_time_addact_mtap">
+                    <select id="start_time_hr_input_mtapedit">
+                        @{
+                            int hr = Int32.Parse(ViewBag.TappingStartDate_Edit.ToString("HH"));
+                
+                            for (int x = 0; x <= 23; x++ )
+                            { 
+                            if (@x <= 9){
+
+                                if (@x == @hr)
+                                     { <option value="@x" selected="selected">@("0" + @x)</option> }
+                                else { <option value="@x">@("0" + @x)</option> }          
+                                }
+                                else{
+                                if (@x == @hr)
+                                      {  <option value="@x" selected="selected">@x</option> }
+                                else  {  <option value="@x">@x</option> }                        
+                                  }}}                               
+                    </select>&nbsp;:
+                    <select id="start_time_min_input_mtapedit">
+                          @{
+                              int min = Int32.Parse(ViewBag.TappingStartDate_Edit.ToString("mm"));
+                
+                
+                            for (int x = 0; x <= 59; x++ )
+                            { 
+                            if (@x <= 9){
+
+                                if (@x == @min)
+                                {  <option value="@x" selected="selected">@("0" + @x)</option> }
+                                else { <option value="@x">@("0" + @x)</option> }          
+                            }
+                                else {
+                                if (@x == @min)
+                                {  <option value="@x" selected="selected">@x</option> }
+                                else  { <option value="@x">@x</option> }  
+                                  
+                            }}}                                               
+            </select>
+</td></tr></table>
+
+    <table id="end_time_table">
+            <tr><td rowspan="2" class="label_datetype">End Time : &nbsp;</td>
+                <td class="label_date">Date</td><td class="label_date">Time (hh:mm)</td>
+            </tr>
+              
+            <tr>
+                <td id="end_date_addact"><input id="end_date_input_mtapedit" type="text"  value="@ViewBag.TappingEndDate_Edit.ToString("MM/dd/yyyy")"/></td>
+                <td id="end_time_addact">
+                    <select id="end_time_hr_input_mtapedit">
+                        @{
+                            int hr_e = Int32.Parse(ViewBag.TappingEndDate_Edit.ToString("HH"));
+                
+                            for (int x = 0; x <= 23; x++ )
+                            { 
+                            if (@x <= 9){
+
+                                if (@x == @hr_e)
+                                {  <option value="@x" selected="selected">@("0" + @x)</option> }
+                                else { <option value="@x">@("0" + @x)</option> }          
+                            }
+                             else{
+
+                                 if (@x == @hr_e)
+                                      {  <option value="@x" selected="selected">@x</option> }
+                                else { <option value="@x">@x</option> }    
+                                                          
+                                  }}}                               
+                    </select>&nbsp;:
+                    <select id="end_time_min_input_mtapedit">
+                          @{
+                              int min_e = Int32.Parse(ViewBag.TappingEndDate_Edit.ToString("mm"));
+                
+                
+                            for (int x = 0; x <= 59; x++ )
+                            { 
+                            if (@x <= 9){
+
+                                if (@x == @min_e)
+                                {  <option value="@x" selected="selected">@("0" + @x)</option> }
+                                else { <option value="@x">@("0" + @x)</option> }          
+                            }
+                                else {
+                                    if (@x == @min_e)
+                                {  <option value="@x" selected="selected">@x</option> }
+                                else  { <option value="@x">@x</option> }  
+                                  
+                            }}}                                               
+            </select>
+</td></tr></table>
+</div>
+    
+@*<div>Matte Temperature : <input id="add_mattetemp"  value="@ViewBag.MatteTemp"  type="text" /> <b>°C</b></div>*@
+<br />  
+<div>Matte Volume :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="add_mattevolume" value="@ViewBag.MatteVol" type="text" /></div>
+  <br />  
+<div>Launder 1: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="add_launder1" type ="text" value="@ViewBag.Launder1" ></div>
+<br /> 
+<div>Matte Tapper 1: &nbsp;&nbsp;&nbsp;<span id="mttaper1_emp">@ViewBag.Mtapper1</span></div>
+<br /> <br /> 
+<div>Launder 2: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="add_launder2" type ="text" value="@ViewBag.Launder2" ></div>
+<br /> 
+<div>Matte Tapper 2: &nbsp;&nbsp;&nbsp;<span id="mttaper2_emp">@ViewBag.Mtapper2</span></div>
+
+
+<div>
+    <br />
+  <br /> <br /> 
+    <input id="edit_mtapping_ok_btn" type="button" value="Edit" />&nbsp;@*<input id="edit_mtapping_close_btn" type="button" value="Cancel" />*@
+
+</div>
+</div>
+ <script type="text/javascript">
+     $(document).ready(function () {
+
+         $("#end_date_input_mtapedit").datepicker({
+             showOn: 'button',
+             buttonText: 'Show Date',
+             buttonImageOnly: true,
+             buttonImage: serverpath + '/Images/calendar.png',
+             dateFormat: 'mm/dd/yy',
+             constrainInput: true
+         });
+
+         $("#start_date_input_mtapedit").datepicker({
+             showOn: 'button',
+             buttonText: 'Show Date',
+             buttonImageOnly: true,
+             buttonImage: serverpath + '/Images/calendar.png',
+             dateFormat: 'mm/dd/yy',
+             constrainInput: true
+         });
+
+         $(".ui-datepicker-trigger").mouseover(function () {
+             $(this).css('cursor', 'pointer');
+
+         });
+
+     });
+
+
+    </script>

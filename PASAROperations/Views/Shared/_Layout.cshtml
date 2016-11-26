@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - PASAR</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    @*<meta name="viewport" content="width=device-width" />*@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    @Styles.Render("~/Content/app.css")
+    @Styles.Render("~/Content/normalize.css")
+    @Styles.Render("~/Content/Styles.css")
+    @*@Styles.Render("~/Content/ToPDF.css")*@
+    @Scripts.Render("~/bundles/modernizr")
+    @* @Scripts.Render("~/Content/themes/base/css")*@
+
+
+
+</head>
+<body>
+    <header>
+        <div id="titlebar">
+            <div id="logo">
+                <div id="first_title">@Html.ActionLink("PASAR", "Index", "Operations")</div>
+                <div id="second_title">
+                    <p>OPERATION'S REPORTS</p>
+                </div>
+            </div>
+        </div>
+        <div id="menubar">
+            <nav>
+                <ul id="menu">
+                    <li id="cfmenu">@Html.ActionLink("CF Logsheet", "", "")
+
+                        <ul id="submenu">
+                            <li>@Html.ActionLink("Logsheet", "CFCycles", "Operations")</li>
+                            <li>@Html.ActionLink("New Cycle", "NewCycle", "Operations")</li>
+                            <li>@Html.ActionLink("New Campaign", "NewCampaign", "Operations")</li>
+                            @*<li>@Html.ActionLink("Employee Shift", "EmployeeShift", "Operations")</li>*@
+                            <li>@Html.ActionLink("Silica Required", "SilicaRequired", "Operations")</li>
+
+                        </ul>
+                    </li>
+
+                    <li id="fsfmenu">@Html.ActionLink("FSF Logsheet", "FSFELogsheet", "Operations")
+                        <ul id="fsf_submenu">
+                            <li>@Html.ActionLink("FSF Logsheet", "FSFELogsheet", "Operations")</li>
+                            <li>@Html.ActionLink("Targets", "FSFE_Targets", "Operations")</li>
+                            <li>@Html.ActionLink("Process Review Comments", "FSFE_Comments", "Operations")</li>
+
+                        </ul>
+
+                    </li>
+
+                    <li id="afmenu">@Html.ActionLink("AF Logsheet", "", "")
+
+                        <ul id="af_submenu">
+                            <li>@Html.ActionLink("Assign Year", "AssignYear", "AnodeFurnace")</li>
+                            <li>@Html.ActionLink("Create Lot No", "CreateLotNo", "AnodeFurnace")</li>
+                            <li>@Html.ActionLink("Blister Receiving", "AFBlisterReceive", "AnodeFurnace")</li>
+                            <li>@Html.ActionLink("Refining", "AFRefining", "AnodeFurnace")</li>
+                            <li>@Html.ActionLink("Casting", "AFCasting", "AnodeFurnace")</li>
+                            <li>@Html.ActionLink("QIG", "AFQIG", "AnodeFurnace")</li>
+                            <li>@Html.ActionLink("Inventory", "Inventory", "AnodeFurnace")</li>
+                            <li>@Html.ActionLink("Targets", "AFTargets", "AnodeFurnace")</li>
+
+                            @*New AF Logsheet*@
+                            <li class="sub_icon">@Html.ActionLink("AF Phase 2", "", "")
+                                <ul id="af2_multimenu">
+                                    <li>@Html.ActionLink("Lot List", "AFLotLists", "AnodeFurnace")</li>
+                                    <li>@Html.ActionLink("Reworked Anodes", "ReworkedAnodes", "AnodeFurnace")</li>
+                                    <li>@Html.ActionLink("Anode Charged to REF", "AnodeCharged", "AnodeFurnace")</li>
+                                    <li>@Html.ActionLink("Time Logs", "AFTimes", "AnodeFurnace")</li>
+                                    <li>@Html.ActionLink("Shift Reports", "ShiftReports", "AnodeFurnace")</li>
+                                </ul>
+                            </li>
+                            @*   End*@
+
+
+
+                        </ul>
+                    </li>
+
+                    <li>@Html.ActionLink("Smelter Prodn Plan", "SmelterPlan", "SmeltPlan")</li>
+                    <li>@Html.ActionLink("PI Lab Reports", "Contact", "Home")</li>
+
+                    <li id="enmenu">@Html.ActionLink("Energy", "Energy", "Energy")
+                        <ul id="en_submenu">
+                            <li>@Html.ActionLink("Energy", "Energy", "Energy")
+                            <li>@Html.ActionLink("Daily MQ", "_DailyMQ", "Energy")
+
+                        </ul>
+                    </li>
+
+                    <li id="sfpmenu">@Html.ActionLink("SFP Logsheet", "", "")
+                        <ul id="sfp_submenu">
+                            <li>@Html.ActionLink("Crew Assignment", "SFP_Crew", "SFP")</li>
+                            <li>@Html.ActionLink("Pots Tracking", "_SFPMonitor", "SFP")
+                                <ul id="pots_submenu">
+                                    <li>@Html.ActionLink("Active Logs", "SFPActive", "SFP")</li>
+                                    <li>@Html.ActionLink("Completed Logs", "SFPComplete", "SFP")</li>
+                                    <li>@Html.ActionLink("Pots and Location Monitor", "_SFPMonitor", "SFP")</li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("Consumables", "SFP_Consumables", "SFP")</li>
+                            <li>@Html.ActionLink("Targets", "SFP_Targets", "SFP")</li>
+                            <li>@Html.ActionLink("Old SFP", "SFP_OldSFP", "SFP")</li>
+                            <li>@Html.ActionLink("Buckets", "SFP_Buckets", "SFP")</li>
+                            <li>@Html.ActionLink("Daily Comments", "SFP_Comments", "SFP")</li>
+                        </ul>
+                    </li>
+
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li style="float: right; padding-right: 50px;">@Html.ActionLink(@Html.Encode(User.Identity.Name) + " | Sign Out", "Logout", "User")</li>
+                    }
+@*<li style="float: right; padding-right: 50px;">@Html.ActionLink("Login", "Login", "Account")</li>*@
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="body">
+        @*For Login Form*@
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+
+
+    @Scripts.Render("~/bundles/jquerylatest")
+    @Scripts.Render("~/bundles/jqueryui")
+
+    @Scripts.Render("~/bundles/kirtscript")
+</body>
+</html>

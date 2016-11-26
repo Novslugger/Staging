@@ -1,0 +1,284 @@
+﻿@{
+    ViewBag.Title = "AF_PreCasting";
+}
+
+
+<div id="aftable_div">
+      
+    <table  class="aftable" id="precasting_tbl" >
+       <thead> 
+       <tr>
+          <th rowspan="2" class="thlong" id="starttime_th">Start Time</th>
+          <th rowspan="2" class="thlong" id="endtime_th">End Time</th> 
+          <th rowspan="2" class="thshort">Activity Code</th>
+          <th rowspan="2" class="thlong">Activity</th>
+          <th rowspan="2" class="thshort">Duration(hrs)</th>
+          <th rowspan="2" class="thlong">Remarks</th>
+          <th colspan="2" class="tshort">Actions</th>
+        </tr>
+       </thead>
+       <tbody id="tbody">
+          <tr style="display: none;"></tr>
+       </tbody>
+
+    </table>
+    
+</div>
+
+ 
+
+      <div id="mould_div_aflogsheet" style="float: left;">
+               <h6><font color="black">Mould Replacement</font></h6>
+         <table id="aflogsheet_pcmouldr">
+            <tr>
+               <th></th>
+               <th>CW1</th>
+               <th>CW2</th>
+            
+            </tr>
+            <tr>
+              <td>1</td> 
+              <td><input type="checkbox" value="1" id="cw_1_1" class ="cw1"></td>
+              <td><input type="checkbox" value="1" id="cw_1_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>2</td> 
+              <td><input type="checkbox" value="2" id="cw_2_1" class ="cw1"></td>
+              <td><input type="checkbox" value="2" id="cw_2_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>3</td> 
+              <td><input type="checkbox" value="3" id="cw_3_1" class ="cw1"></td>
+              <td><input type="checkbox" value="3" id="cw_3_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>4</td> 
+              <td><input type="checkbox" value="4" id="cw_4_1" class ="cw1"></td>
+              <td><input type="checkbox" value="4" id="cw_4_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>5</td> 
+              <td><input type="checkbox" value="5" id="cw_5_1" class ="cw1"></td>
+              <td><input type="checkbox" value="5" id="cw_5_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>6</td> 
+              <td><input type="checkbox" value="6" id="cw_6_1" class ="cw1"></td>
+              <td><input type="checkbox" value="6" id="cw_6_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>7</td> 
+              <td><input type="checkbox" value="7" id="cw_7_1" class ="cw1"></td>
+              <td><input type="checkbox" value="7" id="cw_7_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>8</td> 
+              <td><input type="checkbox" value="8" id="cw_8_1" class ="cw1"></td>
+              <td><input type="checkbox" value="8" id="cw_8_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>9</td> 
+              <td><input type="checkbox" value="9" id="cw_9_1" class ="cw1"></td>
+              <td><input type="checkbox" value="9" id="cw_9_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>10</td> 
+              <td><input type="checkbox" value="10" id="cw_10_1" class ="cw1"></td>
+              <td><input type="checkbox" value="10" id="cw_10_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>11</td> 
+              <td><input type="checkbox" value="11" id="cw_11_1" class ="cw1"></td>
+              <td><input type="checkbox" value="11" id="cw_11_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>12</td> 
+              <td><input type="checkbox" value="12" id="cw_12_1" class ="cw1"></td>
+              <td><input type="checkbox" value="12" id="cw_12_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>13</td> 
+              <td><input type="checkbox" value="13" id="cw_13_1" class ="cw1"></td>
+              <td><input type="checkbox" value="13" id="cw_13_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>14</td> 
+              <td><input type="checkbox" value="14" id="cw_14_1" class ="cw1"></td>
+              <td><input type="checkbox" value="14" id="cw_14_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>15</td> 
+              <td><input type="checkbox" value="15" id="cw_15_1" class ="cw1"></td>
+              <td><input type="checkbox" value="15" id="cw_15_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>16</td> 
+              <td><input type="checkbox" value="16" id="cw_16_1" class ="cw1"></td>
+              <td><input type="checkbox" value="16" id="cw_16_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>17</td> 
+              <td><input type="checkbox" value="17" id="cw_17_1" class ="cw1"></td>
+              <td><input type="checkbox" value="17" id="cw_17_2" class ="cw2"></td>
+            </tr>
+            <tr>
+              <td>18</td> 
+              <td><input type="checkbox" value="18" id="cw_18_1" class ="cw1"></td>
+              <td><input type="checkbox" value="18" id="cw_18_2" class ="cw2"></td>
+            </tr>
+            </table>            
+   </div>
+  
+    <div id="skim_div_aflogsheet">
+       <h6>Ladle Measurements</h6>
+          <table id="ladle_measurement_tbl" class="aflogsheet_ladlem">
+            <tr>
+               <th>Unit</th>
+               <th>CW1</th>
+               <th>CW2</th>
+            </tr>
+             <tr>
+               <td>CL #</td>
+               <td class="border_color"><input  id="LM_1560"  type="text" onkeypress="return NumericOnly(event)" class="extratbl_input"  placeholder="0"/></td>
+               <td class="border_color"><input  id="LM_1561"  type="text" onkeypress="return NumericOnly(event)" class="extratbl_input"  placeholder="0"/></td>
+            </tr>
+             <tr>
+               <td>Spout</td>
+               <td class="border_color"><input  id="LM_1562" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+               <td class="border_color"><input  id="LM_1563" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>Skimming Plate</td>
+               <td class="border_color"><input id="LM_1564" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+               <td class="border_color"><input id="LM_1565" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>Intermediate Ladle #</td>
+               <td class="border_color"><input id="LM_1566" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+               <td class="border_color"><input id="LM_1567" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>Left Spout (CW1)</td>
+               <td class="border_color"><input id="LM_1568" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+               <td class="border_color"><input disabled="disabled" id="" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="-"/></td>
+            </tr>
+              <tr>
+               <td>Left Skim Plate Distance</td>
+               <td class="border_color"><input id="LM_1569" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+               <td class="border_color"><input disabled="disabled" id="" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="-"/></td>
+            </tr>
+              <tr>
+               <td>Right Spout (CW2)</td>
+               <td class="border_color"><input disabled="disabled" id="" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="-"/></td>
+               <td class="border_color"><input id="LM_1570" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>Right Skim Plate Distance</td>
+               <td class="border_color"><input disabled="disabled" id="" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="-"/></td>
+               <td class="border_color"><input id="LM_1571" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+        </table>
+      
+    </div>
+
+     <div id="trods_div_aflogsheet">
+       <h6>Thrust Rods</h6>
+          <table id ="tbl_thrust_rods" class="aflogsheet_ladlem">
+            <tr>
+               <th>Unit</th>
+               <th>Value</th>
+            </tr>
+             <tr>
+               <td>96</td>
+               <td id="" class="border_color"><input id="LM_1572" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+             <tr>
+               <td>98</td>
+               <td id="" class="border_color"><input id="LM_1573" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>99</td>
+               <td id=""class="border_color"><input id="LM_1582" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>100</td>
+               <td id="" class="border_color"><input id="LM_1574" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>S. Hook</td>
+               <td id="" class="border_color"><input id="LM_1575" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>Rake</td>
+               <td id="" class="border_color"><input id="LM_1576" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+             
+        </table>
+      
+    </div>
+
+<div id="ladmould_div_aflogsheet">
+       <h6>Ladle/Mould Inventory</h6>
+          <table id="tbl_LM_inventory" class="aflogsheet_ladlem">
+            <tr>
+               <th>Name</th>
+               <th>Value</th>
+            </tr>
+             <tr>
+               <td>I/L Ladles</td>
+               <td id="" class="border_color"><input id="LM_1577" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+             <tr>
+               <td>Casting Ladles</td>
+               <td id="" class="border_color"><input id="LM_1578" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>PASAR Moulds</td>
+               <td id=""class="border_color"><input id="LM_1579" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>LSN Moulds</td>
+               <td id="" class="border_color"><input id="LM_1580" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+              <tr>
+               <td>CRL Moulds</td>
+               <td id="" class="border_color"><input id="LM_1581" type="text"  onkeypress="return NumericOnly(event)"  class="extratbl_input" placeholder="0"/></td>
+            </tr>
+             
+        </table>
+      
+    </div>
+<span id="pc_lotid" style="visibility:hidden;"></span>
+
+
+<script type="text/javascript">
+   //$('.cw1').on('change', function () {
+   //                 if ($('input.cw1').filter(':checked').length == 0) {
+                      
+   //                   //  $('input.cw1').not(this).prop('checked', false);
+   //                     $('input.cw1').css({ 'background-color': '#FFFFFF' });
+   //                     //$('input.cw1').removeClass("changed");
+                      
+   //                 } else {
+   //                     $(this).css({ 'background-color': '#FFFFFF' });
+   //                     $(this).removeClass("changed");
+
+   //                 }
+
+   //             });
+
+   //             $('.cw2').change(function () {
+   //                 if ($('input.cw2').filter(':checked').length == 0) {
+                        
+   //                 //    $('input.cw2').not(this).prop('checked', false);
+   //                     $('input.cw2').css({ 'background-color': '#FFFFFF' });
+   //                     //$('input.cw2').removeClass("changed");
+                       
+   //               } else {
+   //                     $(this).css({ 'background-color': '#FFFFFF' });
+   //                     $(this).removeClass("changed");
+   //                 }
+
+   //             });
+
+</script>
